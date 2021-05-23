@@ -31,8 +31,10 @@ class TableViewController: UITableViewController {
 
     @IBAction func exitSave(segue: UIStoryboardSegue) {
 
-        let add = segue.source as! AddViewController
-        self.checklistItems.append(add.addTextField.text!)
+        guard let add = segue.source as? AddViewController,
+              let name = add.name else { return }
+        
+        self.checklistItems.append(name)
         tableView.reloadData()
     }
 
