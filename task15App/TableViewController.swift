@@ -26,6 +26,18 @@ class TableViewController: UITableViewController {
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let cell = tableView.cellForRow(at: indexPath) as! ItemCell
+
+        if cell.checkImageView.image == nil {
+            cell.checkImageView.image = UIImage(named: "check")
+        }else {
+            cell.checkImageView.image = nil
+        }
+
+    }
+
     @IBAction func exitCancel(segue: UIStoryboardSegue) {
     }
 

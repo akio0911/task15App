@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		30777B1E2656153F00F19BF5 /* task14App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = task14App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30777B1E2656153F00F19BF5 /* task15App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = task15App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30777B212656153F00F19BF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30777B232656153F00F19BF5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		30777B282656153F00F19BF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		30777B152656153F00F19BF5 = {
 			isa = PBXGroup;
 			children = (
-				30777B202656153F00F19BF5 /* task14App */,
+				30777B202656153F00F19BF5 /* task15App */,
 				30777B1F2656153F00F19BF5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		30777B1F2656153F00F19BF5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30777B1E2656153F00F19BF5 /* task14App.app */,
+				30777B1E2656153F00F19BF5 /* task15App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		30777B202656153F00F19BF5 /* task14App */ = {
+		30777B202656153F00F19BF5 /* task15App */ = {
 			isa = PBXGroup;
 			children = (
 				30777B212656153F00F19BF5 /* AppDelegate.swift */,
@@ -70,15 +70,15 @@
 				30777B2C2656154600F19BF5 /* LaunchScreen.storyboard */,
 				30777B2F2656154600F19BF5 /* Info.plist */,
 			);
-			path = task14App;
+			path = task15App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		30777B1D2656153F00F19BF5 /* task14App */ = {
+		30777B1D2656153F00F19BF5 /* task15App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 30777B322656154600F19BF5 /* Build configuration list for PBXNativeTarget "task14App" */;
+			buildConfigurationList = 30777B322656154600F19BF5 /* Build configuration list for PBXNativeTarget "task15App" */;
 			buildPhases = (
 				30777B1A2656153F00F19BF5 /* Sources */,
 				30777B1B2656153F00F19BF5 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = task14App;
+			name = task15App;
 			productName = task14App;
-			productReference = 30777B1E2656153F00F19BF5 /* task14App.app */;
+			productReference = 30777B1E2656153F00F19BF5 /* task15App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,7 +107,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 30777B192656153F00F19BF5 /* Build configuration list for PBXProject "task14App" */;
+			buildConfigurationList = 30777B192656153F00F19BF5 /* Build configuration list for PBXProject "task15App" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -120,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				30777B1D2656153F00F19BF5 /* task14App */,
+				30777B1D2656153F00F19BF5 /* task15App */,
 			);
 		};
 /* End PBXProject section */
@@ -295,7 +295,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = task14App/Info.plist;
+				DEVELOPMENT_TEAM = Y98YPQ3FW3;
+				INFOPLIST_FILE = task15App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +314,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = task14App/Info.plist;
+				DEVELOPMENT_TEAM = Y98YPQ3FW3;
+				INFOPLIST_FILE = task15App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		30777B192656153F00F19BF5 /* Build configuration list for PBXProject "task14App" */ = {
+		30777B192656153F00F19BF5 /* Build configuration list for PBXProject "task15App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30777B302656154600F19BF5 /* Debug */,
@@ -337,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		30777B322656154600F19BF5 /* Build configuration list for PBXNativeTarget "task14App" */ = {
+		30777B322656154600F19BF5 /* Build configuration list for PBXNativeTarget "task15App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				30777B332656154600F19BF5 /* Debug */,

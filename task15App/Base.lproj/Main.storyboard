@@ -27,13 +27,13 @@
         <!--Table View Controller-->
         <scene sceneID="o5U-QU-iGe">
             <objects>
-                <tableViewController id="EVZ-Uh-dFW" customClass="TableViewController" customModule="task14App" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="EVZ-Uh-dFW" customClass="TableViewController" customModule="task15App" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hKT-ss-rYi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="kNA-gV-McT" customClass="ItemCell" customModule="task14App" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" id="kNA-gV-McT" customClass="ItemCell" customModule="task15App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kNA-gV-McT" id="WBk-cM-PZy">
@@ -54,7 +54,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="checkImageView" destination="WTW-X1-Qif" id="NHR-Bo-Xc5"/>
+                                    <outlet property="checkImageView" destination="WTW-X1-Qif" id="8xh-Je-6gc"/>
                                     <outlet property="nameLabel" destination="hnw-wi-N5L" id="Bn3-nL-eCR"/>
                                 </connections>
                             </tableViewCell>
@@ -95,7 +95,7 @@
         <!--Add View Controller-->
         <scene sceneID="v81-dr-Y6o">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="dRc-n9-brh" customClass="AddViewController" customModule="task14App" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dRc-n9-brh" customClass="AddViewController" customModule="task15App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SLs-Lb-mix">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

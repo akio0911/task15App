@@ -10,7 +10,7 @@ import UIKit
 class ItemCell: UITableViewCell {
 
     @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet private weak var checkImageView: UIImageView!
+    @IBOutlet weak var checkImageView: UIImageView!
 
     func configure(name: String, isChecked: Bool) {
         self.nameLabel.text = name
