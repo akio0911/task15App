@@ -9,7 +9,21 @@ import UIKit
 
 class TableViewController: UITableViewController {
 
-    private var checklistItems = ["りんご", "みかん", "バナナ", "パイナップル"]
+    let KeyName = "Name"
+    let KeyCheck = "Check"
+
+    var checklistItems: [Dictionary<String,Any>] = []
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.checklistItems = [
+            [KeyName:"りんご", KeyCheck:false],
+            [KeyName:"みかん", KeyCheck:true],
+            [KeyName:"バナナ", KeyCheck:false],
+            [KeyName:"パイナップル", KeyCheck:true],
+        ]
+    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         checklistItems.count
@@ -19,8 +33,8 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ItemCell", for: indexPath) as! ItemCell
 
         cell.configure(
-            name: checklistItems[indexPath.row],
-            isChecked: indexPath.row % 2 == 1
+            name: checklistItems[indexPath.row][KeyName] as! String,
+            isChecked: checklistItems[indexPath.row][KeyCheck] as! Bool == true
         )
 
         return cell
@@ -28,14 +42,11 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-        let cell = tableView.cellForRow(at: indexPath) as! ItemCell
+        let cell = checklistItems[indexPath.row][KeyCheck] as! Bool
 
-        if cell.checkImageView.image == nil {
-            cell.checkImageView.image = UIImage(named: "check")
-        }else {
-            cell.checkImageView.image = nil
-        }
+        checklistItems[indexPath.row][KeyCheck] = !cell
 
+        self.tableView.reloadRows(at: [indexPath], with: .automatic)
     }
 
     @IBAction func exitCancel(segue: UIStoryboardSegue) {
@@ -43,11 +54,11 @@ class TableViewController: UITableViewController {
 
     @IBAction func exitSave(segue: UIStoryboardSegue) {
 
-        guard let add = segue.source as? AddViewController,
-              let name = add.name else { return }
-        
-        self.checklistItems.append(name)
-        tableView.reloadData()
+        if let add = segue.source as? AddViewController {
+            let name: Dictionary<String,Any> = [KeyName: add.name!, KeyCheck: false]
+            self.checklistItems.append(name)
+            tableView.reloadData()
+        }
     }
 
 }

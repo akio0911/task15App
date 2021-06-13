@@ -16,5 +16,4 @@ class ItemCell: UITableViewCell {
         self.nameLabel.text = name
         self.checkImageView.image = isChecked ? UIImage(named: "check") : nil
     }
-
 }
