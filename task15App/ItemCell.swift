@@ -10,10 +10,10 @@ import UIKit
 class ItemCell: UITableViewCell {
 
     @IBOutlet private weak var nameLabel: UILabel!
-    @IBOutlet weak var checkImageView: UIImageView!
+    @IBOutlet private weak var checkImageView: UIImageView!
 
-    func configure(name: String, isChecked: Bool) {
-        self.nameLabel.text = name
-        self.checkImageView.image = isChecked ? UIImage(named: "check") : nil
+    func configure(item: ChecklistItem) {
+        nameLabel.text = item.name
+        checkImageView.image = item.isChecked ? UIImage(named: "check") : nil
     }
 }
